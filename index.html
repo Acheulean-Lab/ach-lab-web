@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="ALscripts.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>  
+
+</head>
+<body> 
+    <div class="scrolicon  invisible sm:visible "id="square1"></div>
+    <div class="bar invisible sm:visible "id="bar1"></div>
+   
+    <div class="square-wrapper">
+        <div class="square solid-color" ></div>
+        <div class="square gradient"></div>
+      </div>
+
+       <div class="burger" style="display: none;">
+        <div class = "bgw">
+        <img src="imgs/ACHEULEANLABHEADER.gif" class="burger-image">
+    <div class="burger-title">ACHEULEAN LAB</div>
+        <div class="burgertext">
+            2022 → 
+            <br>
+            <a href="https://ethan-rubens.com">Ethan Rubens</a>       
+        </div>
+    </div>
+       </div>
+
+</div>
+    <div class="topper">  
+    <div class="header" id="header1"> 
+        <div class="headertext">
+            <span>Turn</span> <span>over</span> <span>stones,</span> <br> 
+            <span>open</span> <span>drawers,</span> <br> 
+            <span>sift</span> <span>through</span> <br>  
+            <span>fragments,</span> <br>  
+            <span>decipher</span> <span>glyphs</span> <br>  
+            <span>in</span> <span>the</span> <span>concrete,</span>
+        </div>
+    
+        <div class="headertext">
+            <span>pick</span> <span>out</span> <span>faces</span> <br>
+            <span>in</span> <span>the</span> <span>fire,</span> <span>greet</span> <span>the</span> <br> 
+            <span>names</span> <span>on</span> <span>the</span> <span>wall,</span> <br>
+            <span>listen</span> <span>closely</span> <span>to</span> <br>
+            <span>the</span> <span>groans</span> <br>
+            <span>of</span> <span>weary</span> <span>timber,</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>ask</span> <span>how</span> <span>or</span> <span>when</span> <span>or</span> <br>
+            <span>why</span> <span>this</span> <span>or</span> <span>that</span> <span>got</span> <br>
+            <span>here</span> <span>or</span> <span>there</span> <span>or</span> <br>
+            <span>nowhere</span> <span>to</span> <span>be</span> <span>found;</span><br>
+            <span>an</span> <span>awareness</span> <br>
+            <span>of</span> <span>the</span> <span>everyday</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>is</span> <span>at</span> <span>the</span> <span>foundation</span> <br>
+            <span>of</span> <span>a</span> <span>more</span> <br>
+            <span>complete</span> <span>world.</span> <br>
+            <span>When</span> <span>the</span> <span>mundane</span> <br>
+            <span>is</span> <span>acknowledged</span> <br>
+            <span>as</span> <span>extraordinary</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>the</span> <span>habitual</span> <br>
+            <span>becomes</span> <span>novel.</span> <br>
+            <span>Often,</span> <span>the</span> <span>most</span> <br>
+            <span>engaging</span> <span>phenomena</span> <br>
+            <span>are</span> <span>the</span> <span>inexplicable</span><br> 
+            <span>and</span> <span>uncertain,</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>and</span> <span>sometimes</span> <br>
+            <span>the</span> <span>most</span> <span>important</span> <br> 
+            <span>thing</span> <br> 
+            <span>is</span> <span>what</span> <br> 
+            <span>we</span> <span>have</span> <span>learned</span> <br> 
+            <span>to</span> <span>ignore.</span>  
+        </div>
+    </div>
+    <div class="header" id="header2"> 
+        <div class="headertext">
+            <span>Turn</span> <span>over</span> <span>stones,</span> <br> 
+            <span>open</span> <span>drawers,</span> <br> 
+            <span>sift</span> <span>through</span> <span>fragments,</span> <br>  
+            <span>decipher</span> <span>glyphs</span> <br>  
+            <span>in</span> <span>the</span> <span>concrete,</span><br>
+            <span>pick</span> <span>out</span> <span>faces</span> <br>
+            <span>in</span> <span>the</span> <span>fire,</span> <span>greet</span> <span>the</span> <br> 
+            <span>names</span> <span>on</span> <span>the</span> <span>wall,</span> <br>
+            <span>listen</span> <span>closely</span> <span>to</span> <br>
+            <span>the</span> <span>groans</span> <br>
+            <span>of</span> <span>weary</span> <span>timber,</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>ask</span> <span>how</span> <span>or</span> <span>when</span> <span>or</span> <br>
+            <span>why</span> <span>this</span> <span>or</span> <span>that</span> <span>got</span> <br>
+            <span>here</span> <span>or</span> <span>there</span> <span>or</span> <br>
+            <span>nowhere</span> <span>to</span> <span>be</span> <span>found;</span><br>
+            <span>an</span> <span>awareness</span> <br>
+            <span>of</span> <span>the</span> <span>everyday</span> 
+            <span>is</span> <span>at</span> <span>the</span> <span>foundation</span>
+            <span>of</span> <span>a</span> <span>more</span> <br>
+            <span>complete</span> <span>world.</span> <br>
+            <span>When</span> <span>the</span> <span>mundane</span> <br>
+            <span>is</span> <span>acknowledged</span> <br>
+            <span>as</span> <span>extraordinary</span> 
+        </div>
+    
+        <div class="headertext">
+            <span>the</span> <span>habitual</span> <br>
+            <span>becomes</span> <span>novel.</span> <br>
+            <span>Often,</span> <span>the</span> <span>most</span> <br>
+            <span>engaging</span> <span>phenomena</span> <br>
+            <span>are</span> <span>the</span> <span>inexplicable</span><br> 
+            <span>and</span> <span>uncertain,</span> <br> 
+            <span>and</span> <span>sometimes</span> <br>
+            <span>the</span> <span>most</span>  <br> 
+            <span>important</span>  <span>thing</span>   <br> 
+            <span>is</span> <span>what</span>  <span>we</span> <span>have</span> <br> 
+            <span>learned</span>  <span>to</span> <span>ignore.</span>  
+        </div>
+    </div>
+    <div class="topinfo">
+        <div class="ach"> ACHEULEAN LAB </div>
+    </div>
+    <div class="redimg" >
+        <img src="imgs/handaxe/008b.png"  class="red-image" id="red-image-2"  data-speed="-0.021">
+        <img src="imgs/handaxe/001b.png"  class="red-image" id="red-image-3" data-speed="0.3">
+        <img src="imgs/handaxe/003b.png"  class="red-image" id="red-image-4" data-speed="-0.021">
+        <img src="imgs/handaxe/005b.png"  class="red-image" id="red-image-5" data-speed="0.051">
+
+    </div>
+</div>
+
+    
+
+    <div class="bodycontent" id="abstract" style="z-index: 4; margin-top: -100px;">
+    <div  class="sub-container">
+        <div class="sub"> Abstract </div>
+     
+        
+    </div>
+
+    <hr>
+    <div class="abstract">
+        <div class="toptext"> 
+            PROJECT ORIGINS: The Acheulean Handaxe is a cordiform biface stone tool manufactured by ancient humans across Africa, Europe, and Asia during the Lower and Middle Pleistocene. In use for over a million and a half years, from 1.7 to 0.1 Mya without revision, the Acheulean Handaxe is the most prolific designed object in history. Despite global distribution, the function of these artifacts is not known. It is unclear if the tool was used for its blade, as an object of ceremony, to convey status or worth, or served some function not yet imagined. The razor-sharp circumference yields an unwieldily edge, hinting that the handaxe purpose was more than pragmatic. The only certainty is the consistency of its form and technique of manufacture.
+        </div>
+        <div class="toptext"> 
+            The Acheulean Handaxe is the origin of design; an object produced with intent through inherited cultural knowledge and technical skill. A constant presence in human lives for over a million years, this most simple object - a sharpened stone - still holds mystery. How absurd that we have managed to forget the purpose of something important enough to remember for a million years. Acheulean Lab pays homage to this universal human artifact and views it as both the archetype for successful design and a representation of the mundane.
+        </div>
+    </div>
+</div>
+
+<div class="bodycontent" id="index">
+<div  class="sub-container">
+    <div class="sub"> Index </div>
+</div>
+<hr>
+<div class="button-container">
+    <button class="toggle-button color-speculative" onclick="toggleButton(this)">Speculative</button>
+    <button class="toggle-button color-digital" onclick="toggleButton(this)">Digital</button>
+    <button class="toggle-button color-product" onclick="toggleButton(this)">Product</button>
+    <button class="toggle-button color-learning" onclick="toggleButton(this)">Learning How</button>
+    <button class="toggle-button color-sound" onclick="toggleButton(this)">Sound</button>
+    
+</div>
+</div>
+
+<!-- actant objects -->
+<div class="bodycontent" id="actant objects">
+      <div  class="sub-container">
+        <div class="sub">Actant Objects </div>
+</div>
+    <hr>
+    
+<!-- Seeshell -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Seeshell
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+        A shelfish-powered ocean health monitor to preserve culture in a changing world.
+        </div>
+        <div class="gallery">
+            <img src="imgs/seeshell/cp003.jpg" >
+            <img src="imgs/seeshell/cp002.jpg" >
+            <img src="imgs/seeshell/cp001.jpg" >
+        </div>
+        <div class="seemore">
+<p> Read More > </p>    
+</div>
+<div class="sectioncontent">
+     <div class="bodydesc"style='font-weight: 600;'> Seeshell is a biocentric ocean health monitor that reinforces the human connection to the marine environment.  Seeshell demonstrates the ability of clams and mussels to purify the ocean, but reminds us that human cooperation is required. Seeshell tracks the motion of clams and mussels to measure water contamination in realtime: in the presence of high levels of contaminants bivalves close their shells. Seeshell's glass enclosure introduces a new point of exchange with aquatic life; as commercial fishing fades to tourism and climate change threatens fisheries Seeshell expresses the tangible value of native species if cultivated and helped to flourish.    </div>        
+     <div class="bodydesc"> Seeshell hosts a colony of shellfish (bivalves) in a transparent enclosure, installed at intertidal zones. Each installation is raised a meter from the ground, supported by a tower tailored to provide habitat for local species. A pile of stones offers crabs shelter from seabirds or a textured pillar lends mussels a perch to bite. Hidden pipes draw fresh seawater into the enclosure, circulating the colony with nutrients and particulate. The device observes the level of local seawater pollution through the technique of valvometry: the monitoring of clam and mussel shell motion as they open or close to provide cover from water contaminants.Through a computer-vision system Seeshell observes changes to water quality, such as presence of harmful chemicals like excess fertilizers. A network of sensors along a coastline provides real-time and historic information about local conditions, serving as an early warning for sewage or agricultural contamination. This information is charted to an online map, and made accessible to the public. Seeshell can be used to track changing water conditions remotely, or verify in person if the water at a beach is safe for swimming, fishing, or wading.    </div>        
+</br>
+     <div class="gallery">
+        <img src="imgs/seeshell/cpip.gif" >
+        <img src="imgs/seeshell/cpP1.jpg" >
+        <img src="imgs/seeshell/cpP02.JPG" >
+    </div>
+</br>
+     <div class="bodydesc"> The town of Poole, England was the inspiration for this project and basis for ethnographic field work and literature analysis. This proposal comes in response to several large seawater contamination events along the Southeast Coast of England, and the observation that as Poole’s economy drifts away from the seafood industry an important cultural history fades from daily life. This project was the outcome of a collaboration between the Royal College of Art and the RNLI (Royal National Lifeboat Institution), seeking new futures for coastal communities.   </div>        
+
+</div>
+        <div class="tags">
+            <span class="tag color-speculative">Speculative</span>
+            <span class="tag color-product">Product</span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- ngi -->
+<div class="bodycontent" id="Non-Graphic Interfaces"> 
+    <div  class="sub-container">
+        <div class="sub">Non-Graphic Interfaces </div>
+</div>
+    <hr>
+
+    <!-- Rockbell -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Rockbell
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+            Replace a button with a mindful act.
+        </div>
+        <div class="gallery">
+            <img src="imgs/rockbell/rb001.jpg">
+            <img src="imgs/rockbell/rb002.jpg">
+            <img src="imgs/rockbell/rbG001.gif">
+        </div>
+        <div class="seemore">
+            <p> Read More > </p>    
+            <div class="sectioncontent">
+            <div class="bodydesc" > Instigate interaction with natural materials in the built
+        environment. Rockbell is a new form of interface that calls attention to mundane actions. Strike one
+        rock with another to trigger a ring; the act of arrival becomes a meditative and restorative experience.
+        Rockbell is a respite from technology and mass-manufactured materials; a more fulfilling sensory
+        experience that feels like an escape to nature. Rockbell was inspired by Florence Williams’s The Nature
+        Fix (which details the myriad of benefits that come from exposure to the outdoors) and the overly
+        digital world of the remote days of covid-19.
+    </div>      
+    </div> 
+<div class="tags">
+            <span class="tag color-sound">Sound</span>
+            <span class="tag color-product">Product</span>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- Sonic Thermometer -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Sonic Thermometer
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+        Listen to your body.        
+        </div>
+        <div class="gallery">
+            <img src="imgs/at003.jpg" alt="Speculative Object">
+            <img src="imgs/at004.jpg" alt="Speculative Object">
+        </div>
+        <div class="seemore">
+            <p> Read More > </p>        
+            <div class="sectioncontent">
+                <div class="bodydesc" > 
+                    How does the practice of healthcare change when we emphasize sensory information over absolute measurements and values? This thermometer reminds the user to pay close attention to signals from their body, and that sickness and health are more than binary. This device produces two tones, one effected by the user’s temperature. The device is tuned so a healthy temperature will align the two sound waves and a slight fever will prevent the tones from synchronizing. Place device to forehead and listen (closely) to your body.
+                </div>
+            
+            </div>
+        <div class="tags">
+            <span class="tag color-speculative">Speculative</span>
+            <span class="tag color-sound">Sound</span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- frameworks -->
+<div class="bodycontent" id="frameworks">
+    <div  class="sub-container">
+        <div class="sub">Frameworks</div>
+</div>
+    <hr>
+
+<!-- Reoriented Strand Board -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Reoriented Strand Board
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+            A new visual language for wood composites. How might wood composites be reconfigured to shed preconceptions and make them more compelling to architects, designers, and builders?</div>
+        <div class="gallery">
+            <img src="imgs/RSB images/RS005_panel.jpg" >
+            <img src="imgs/RSB images/RS002_macro.jpg" >
+            <img src="imgs/RSB images/RSW001.jpg" >
+        </div>
+        <div class="seemore">
+<p> Read More > </p>    
+</div>
+<div class="sectioncontent">
+    <div class="bodydesc" style='font-weight: 600;'>Oriented Strand Board (OSB) is a wood composite commonly used in construction and furniture, manufactured by compressing wood chips with adhesive under high temperature and pressure. Challenging perceptions of OSB as a lesser material, RSB (Reoriented Strand Board) refines the aesthetic character of wood composite and reconnects users to the material’s origin with an embedded grain structure reminiscent of natural hardwood. Dyed strands are scattered, aligned, and bonded into the material to form swirling patterns. RSB amends the surface of OSB with a clear motif, creating an opportunity for architects, designers, and makers to celebrate the materiality of wood composites in the same way they might hardwood. </div>
+    <div class="bodydesc">The primary goal of this project was to validate that large-particle patterns could be formed with cymatic vibration. By verifying that aesthetically pleasing grain-like patterns can be assembled and bonded with an automated process the potential to integrate RSB in design and construction through mass manufacture was confirmed. </div>
+
+</br>
+     <div class="gallery">
+        <img src="imgs/RSB images/RSP001.gif" >
+        <img src="imgs/RSB images/RSP002.gif" >
+        <img src="imgs/RSB images/RSP003.gif" >
+    </div>
+</br>
+     <div class="bodydesc">Cymatic vibration was identified as a simple and flexible method to form patterns. Cymatics is an area of research that examines waves and their visual expressions through the acoustic vibration of particles (typically sand or salt) across the surface of a resonant sheet. Experiments were conducted to test both the feasibility of generating cymatic patterns with large particles (detailed below), and to integrate cymatics into composite material production. To create RSB a pattern was generated by vibrating dyed wood particles, which was then layered with adhesive and contrasting wood material, and pressed until solid.  
+     </div>
+</div>
+        <div class="tags">
+            <span class="tag color-speculative">Speculative</span>
+            <span class="tag color-sound">Sound</span>
+        </div>
+    </div>
+</div>
+
+<!-- Cam Bench -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Cam Bench
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+            How can something seldom used become something useful?         
+        </div>
+        <div class="gallery">
+            <img src="imgs/cb/cb001.jpg" >
+            <img src="imgs/cb/cb002.jpg" >
+            <img src="imgs/cb/cb008.jpg" >
+            <img src="imgs/cb/cb003.jpg" >
+            <img src="imgs/cb/cb004.jpg" >
+            <img src="imgs/cb/cb005.jpg" >
+            <img src="imgs/cb/cb006.jpg" >
+            <img src="imgs/cb/cb007.jpg" >
+        </div>
+        <div class="seemore">
+<p> Read More > </p>    
+</div>
+<div class="sectioncontent">
+    <div class="bodydesc" >
+        Cam Bench is a furniture set that creates utility from the state of being in storage. Cam Bench repurposes objects, material, tools, and scraps as utilities. A pair of triangular legs act as a fixture for a bench or coffee table, providing a sturdy base to support seats made of ladders, brooms and mops, leftover construction materials, and anything else too important or sentimental to throw out. The legs secure a seat without tools or fasteners, simply by rotating into place; to make building accessible to non-builders, and to avoid modifications to supplied material. Potential user-supplied seat materials include: cardboard boxes, fence posts, sticks and yard trimmings, books and paper, boats and oars, camping equipment, car parts, broken furniture, pallets, bodies. Households accumulate clutter, storage fills up. We hold artifacts, materials, and tools for their nostalgic value, potential future need, or their expected but infrequent use. Could these utilities be preserved without taking up space?   
+    </div>
+</br>
+</div>
+        <div class="tags">
+            <span class="tag color-speculative">Speculative</span>
+            <span class="tag color-product">Product</span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Unclassified -->
+<div class="bodycontent" id="Unclassifiedexp">
+    <div  class="sub-container">
+        <div class="sub">Unclassified Experiments</div>
+</div>
+    <hr>
+
+
+<!-- Slip -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Faceless Slip
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+            Transparent armor, delicate impermeability.
+        </div>
+        <div class="gallery">
+            <img src="imgs/slip/slip001.jpg" >
+            <img src="imgs/slip/slip002.jpg" >
+            <img src="imgs/slip/slip003.jpg" >
+            <img src="imgs/slip/slip004.jpg" >
+            <img src="imgs/slip/slip005.jpg" >
+            <img src="imgs/slip/slip006.jpg" >
+            <img src="imgs/slip/slip007.jpg" >
+            <img src="imgs/slip/slip008.jpg" >
+        </div>
+        <div class="seemore">
+<p> Read More > </p>    
+</div>
+<div class="sectioncontent">
+    <div class="bodydesc" >
+        A sheer and near weightless slip dress, made of Dyneema (ultra high molecular weight polyethylene): a fully waterproof composite material, stronger than steel by weight. The slip was stitched and seam taped, and though the wearer is visually exposed they are fully insulated from outside forces and conditions.
+    </div>
+</br>
+</div>
+        <div class="tags">
+            <span class="tag color-product">Product</span>
+            <span class="tag color-learning">Learning How</span>
+        </div>
+    </div>
+</div>
+
+<!-- Fishcase -->
+<div class="sectioncard">
+    <div class="sectiontitle">
+        Fishcase
+    </div>
+    <div class="bodycontent">
+        <div class="bodydesc">
+            Making the mundane absurd. Flexible rubber case for glasses.
+                </div>
+        <div class="gallery">
+            <img src="imgs/fishgif.gif" >
+            <img src="imgs/fish001.jpg" >
+            <img src="imgs/fish002.jpg" >
+        </div>
+
+</div>
+        <div class="tags">
+            <span class="tag color-product">Product</span>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="lightbox">
+    <div class="lightboximg"></div>
+</div>
+
+</body>
+
+
+
+</html>
+

@@ -1,0 +1,584 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Stacks elements vertically */
+    min-height: 100vh; /* Ensures the body covers full viewport height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.abstract {
+    justify-content: center; /* Centers horizontally */
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 14px;
+}
+
+
+.square-wrapper {
+    position: absolute;
+    width: 100%; /* Ensures full viewport width */
+    max-width: 100vw; /* Prevents overflow beyond viewport width */
+    height: 340px;
+    overflow: hidden; /* This will crop the contents outside of the set dimensions */
+    z-index: 1;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  .square {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .solid-color {
+    background-color: #1914ff;
+  }
+
+
+  .square-wrapper:hover {
+    box-shadow: 0 0 1px 1px #1914ff;
+}
+
+  .gradient {
+    background: linear-gradient(180deg, #1914ff 20%, #041554 70%, #000 100%);
+        width: 100vw;
+  }
+  
+
+.topper {
+    height: 600px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%; /* Ensures full viewport width */
+    overflow: hidden; /* This will crop the contents outside of the set dimensions */
+    z-index: 2;
+  }
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%; /* Adjusted to full width */
+    max-width: 862px; /* Limits width */
+}
+
+.headertext {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 109%; /* 13.08px */
+    letter-spacing: 0.10px;
+    width: 148px;
+}
+
+
+
+#header2{
+    display: none;
+}
+
+.ach {
+    margin-top: 8px;
+    color: #FFF;
+    font-family: "EB Garamond";
+    font-size:  96px; 
+    font-style: normal;
+    font-weight: medium;
+    letter-spacing: 4.4px;
+    z-index: 13;
+}
+
+
+.sub {
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 200;
+    align-self: flex-start; /* Aligns the sub element to the left */
+}
+
+.sub-container {
+    display: flex;
+    max-width: 862px; /* Limits width */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+.topinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Adjusted to full width */
+    max-width: 862px; /* Limits width */
+    
+}
+
+.toptext {
+    width: 424px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.scrolicon{
+    margin-top: 36px;
+    top: 0px;
+       height: 12px;
+     width: 12px;
+     background-color: #FFFFFF;
+   position: fixed;
+       right: 20px;
+   z-index: 3;
+       transition: width 0.2s ease-out;
+}
+
+.bar {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    height: 80%;
+    background: linear-gradient(180deg, #1914ff 22.4%, rgba(255, 72, 0, 0.306) 65.1%, rgba(217, 217, 217, 0) 91.15%);
+    width: 4px;
+    z-index: 2;
+}
+
+hr {
+    height: 1px;
+    border: none;           
+    background-color: white;  
+    width: 100%;   
+    margin-top: -0px;
+    margin-bottom: 12px;
+}
+
+.bodycontent {
+    margin-bottom: 40px;
+    width: 862px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.toggle-button{
+cursor: pointer;}
+
+.toggle-button, .tag {
+    border: 2px solid transparent; /* Initial border is transparent */
+    color: black; /* Text color */
+    padding: 0px 1px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-radius: 2px;
+}
+
+.toggle-button:hover{
+    border: 2px solid white;
+}
+/* Color Classes */
+.color-speculative { background-color: #FFE500; }
+.color-digital { background-color: #00EF51; }
+.color-product { background-color: #00FFFF; }
+.color-sound { background-color: #FD6A00; }
+.color-learning {background-color: #C500C5;}
+
+.toggle-button.active {
+  
+    background-color:#2e2e2e;
+    color: white; 
+
+}
+
+.toggle-button.active:hover{
+    border: 2px solid white;
+}
+
+
+.sectiontitle {
+    font-size: 36px;
+    margin-bottom: 6px;
+    color: #FFF;
+}
+
+a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;}
+
+.bodydesc {
+    padding-bottom: 6px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.gallery{
+    display: flex;
+    align-items: left; 
+    height: 240px; 
+    width: 100%; 
+    overflow-x: auto; 
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+
+}
+
+
+
+
+.gallery img {
+    height: 240px; 
+    /* min-width: 140px; */
+    object-fit: cover; 
+    background-color: black; 
+    display: block; 
+    transition: transform 0.2s ease-in-out;  
+}
+
+
+.gallery img:hover {
+    transform: scale(1.04); 
+    cursor: pointer;
+  }
+
+
+.seemore p {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.seemore p:hover{
+    font-weight: 600;
+}
+
+
+.tags {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: default;
+}
+
+
+
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #000000 #ffffff;
+  }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0px;
+  } 
+
+  .square-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Hide the image initially */
+  }
+
+
+  .redimg {
+    width: 100%;
+    pointer-events: none; 
+
+  }
+  
+  
+
+#red-image-2 {
+    z-index: 10;
+    top: 140px; /* Adjust as needed */
+    left: 18%; /* Adjust as needed */
+    position: absolute;
+    width: 198px; 
+    object-fit: cover;
+ 
+
+}
+
+#red-image-3 {
+    top: 230px; /* Adjust as needed */
+    left: 37%; /* Adjust as needed */
+    position: absolute;
+    width: 210px; 
+    object-fit: cover;
+    z-index: 1000;
+    transform: rotate(-10deg);
+}
+
+#red-image-4 {
+    top: 110px; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    position: absolute;
+    width: 160px; 
+    object-fit: cover;
+}
+
+#red-image-5 {
+    z-index: 12;
+        left: 72%; /* Adjust as needed */
+        position: absolute;
+        width: 180px; 
+        object-fit: cover;
+        top: 130px; /* Adjust as needed */
+
+    }
+
+.burger {
+    border-radius: 2px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1002;
+    width:168px;
+    height: 216px;
+    background-color: #1914ff;
+
+}
+
+.burger-image{
+    width: 158px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+
+  .burgertext{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+
+  .burger-title{
+    color: #FFFFFF;
+    font-family: "EB Garamond";
+    font-size:  18px; 
+    font-weight: Bold;
+    margin-left: 5px;
+    margin-top: -6px;
+    margin-bottom: -1px;
+  }
+
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    z-index: 1000; 
+    display: none; /* Hidden by default */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+  }
+  
+  .lightboximg {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Stack children horizontally */
+    align-items: center; /* Align items vertically centered */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    gap: 12px; /* Space between images */
+    padding: 6px;
+    width: 100%; /* Ensure it spans the full width */
+    cursor: pointer;
+    
+  }
+  
+  .lightboximg img {
+    max-height: 80vh; /* Ensures images fit within the modal height */
+    object-fit: contain; /* Ensure the entire image fits within the frame */
+    display: block; /* Ensure the image is block-level */
+    transition: transform 0.5s ease;
+  }
+
+
+
+  .sectioncontent {
+    display: none;
+}
+
+.sectioncontent.show {
+    display: block;
+}
+
+  
+  @media (max-width: 960px) {
+    .scrolicon{
+        display: none;
+    }
+    
+    .bar{display: none;}
+}
+  
+@media (max-width: 900px) {
+    body{margin-left: 6px; margin-right: 6px;}
+
+
+    .abstract, .header, .sub-container, .topinfo, .bodycontent {
+        width: 592px;
+        /* margin:16px; */
+    }
+
+    .topper{
+        height: 600px;
+    }
+  
+    #header1 {
+        display: none;
+    }
+    
+    #header2{
+        display: flex;
+    }
+    
+
+    .ach{
+        font-size: 64px;
+
+    }
+
+    .abstract{
+        flex-direction: column;
+            /* align-items: center; */
+
+    }
+
+    #red-image-2 {
+display: none;}
+
+#red-image-3 {
+    left: 25%;
+    top: 270px;
+}
+
+#red-image-4 {
+left: 60%;
+top: 180px;
+}
+
+#red-image-5 {
+display: none;
+}
+
+    }
+
+
+
+/* mobile */
+@media (max-width: 600px) {
+    .abstract, .header, .sub-container, .topinfo, .bodycontent, .toptext {
+        max-width: 432px;
+        width: 94vw;
+    }
+
+
+.ach{
+    font-size: 48px;
+    margin-top: 25px;
+    letter-spacing: 0px;
+
+}
+
+.topper{
+    height: 320px;
+
+}
+body{margin-left: 2px; margin-right: 2px;}
+
+.scrolicon{
+    display: none;
+}
+
+.bar{display: none;}
+
+.sub{
+    font-size: 36px;
+}
+
+.sectiontitle{
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+hr{margin-bottom: 6px;}
+
+#header1 {
+    display: none
+}
+
+#header2{
+    display: none;
+}
+
+#red-image-4 {
+display: none;
+}
+#red-image-3 {
+    display: none;
+    }
+
+#red-image-2 {
+    left: 26%;
+    top: -10px;
+    width: 220px;
+    display: flex;
+}
+
+
+
+}
+
+@media (max-width: 420px) {
+    .ach{
+        font-size: 40px;
+        margin-top: 25px;
+        letter-spacing: 0px;
+
+    }
+
+}
