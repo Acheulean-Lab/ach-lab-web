@@ -108,9 +108,19 @@ body {
 .sub {
     color: #FFF;
     font-size: 56px;
-    font-weight: 200;
+    font-weight: 600;
     align-self: flex-start; /* Aligns the sub element to the left */
 }
+
+.sectionheader{
+        color: white;
+        font-style: italic;
+        font-size: 36px;
+        font-weight:100;
+        margin-bottom: 4px;
+        margin-top: -4px;
+
+    }
 
 .sub-container {
     display: flex;
@@ -133,7 +143,7 @@ body {
 .toptext {
     width: 424px;
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
 }
@@ -202,8 +212,8 @@ cursor: pointer;}
 }
 /* Color Classes */
 .color-speculative { background-color: #FFE500; }
-.color-digital { background-color: #00EF51; }
-.color-product { background-color: #00FFFF; }
+.color-material { background-color: #00EF51; }
+.color-interaction { background-color: #00FFFF; }
 .color-sound { background-color: #FD6A00; }
 .color-learning {background-color: #C500C5;}
 
@@ -233,7 +243,7 @@ a{
 .bodydesc {
     padding-bottom: 6px;
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -373,7 +383,7 @@ a{
     left: 20px;
     z-index: 1002;
     width:168px;
-    height: 216px;
+    height: 218px;
     background-color: #1914ff;
 
 }
@@ -446,6 +456,10 @@ a{
     display: block;
 }
 
+
+#header3 {
+    display: none;
+}
   
   @media (max-width: 960px) {
     .scrolicon{
@@ -545,6 +559,11 @@ body{margin-left: 2px; margin-right: 2px;}
     margin-bottom: 4px;
 }
 
+.sectionheader{
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
 hr{margin-bottom: 6px;}
 
 #header1 {
@@ -563,11 +582,12 @@ display: none;
     }
 
 #red-image-2 {
-    left: 26%;
+    left: 25%;
     top: -10px;
     width: 220px;
     display: flex;
 }
+
 
 
 
