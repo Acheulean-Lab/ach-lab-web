@@ -78,7 +78,6 @@ filterCards();
 
 
 
-
 document.addEventListener("DOMContentLoaded", function() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -132,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Initialize animations
   initAnimations();
+   
 });
 
 
@@ -298,20 +298,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", function() {
-    const readMoreLinks = document.querySelectorAll(".seemore");
-    readMoreLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            const sectionContent = this.parentElement.querySelector(".sectioncontent");
-            sectionContent.classList.toggle("show");
+  const readMoreLinks = document.querySelectorAll(".seemore");
 
-            const readMoreText = this.querySelector("p");
-            if (sectionContent.classList.contains("show")) {
-                readMoreText.textContent = "Read Less <";
-            } else {
-                readMoreText.textContent = "Read More >";
-            }       
-         });
-    });
+  readMoreLinks.forEach(link => {
+      link.addEventListener("click", function() {
+          const sectionContent = this.parentElement.querySelector(".sectioncontent");
+          const readMoreText = this.querySelector("p");
+
+          sectionContent.classList.toggle("show");
+
+          if (sectionContent.classList.contains("show")) {
+              readMoreText.innerHTML = "Read Less <";
+          } else {
+              readMoreText.innerHTML = "Read More <span class='arrow'>></span>";
+          }
+      });
+  });
 });
+
+

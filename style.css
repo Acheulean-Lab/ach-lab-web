@@ -288,7 +288,7 @@ a{
     cursor: pointer;
     color: #FFF;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 800;
     margin-top: 6px;
     margin-bottom: 6px;
 }
@@ -297,6 +297,19 @@ a{
     font-weight: 600;
 }
 
+.arrow {
+    display: inline-block;
+    animation: bounce .8s infinite alternate ease-in-out;
+  }
+  /* Bouncing animation */
+  @keyframes bounce {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
 
 .tags {
     margin-top: 10px;
