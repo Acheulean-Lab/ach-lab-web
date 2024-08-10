@@ -214,8 +214,10 @@ cursor: pointer;}
 .color-speculative { background-color: #FFE500; }
 .color-material { background-color: #00EF51; }
 .color-interaction { background-color: #00FFFF; }
-.color-sound { background-color: #FD6A00; }
+.color-sound { background-color: #ff6315; }
 .color-learning {background-color: #C500C5;}
+.color-digital {background-color: rgb(255, 0, 0);}
+
 
 .toggle-button.active {
   
@@ -235,10 +237,23 @@ cursor: pointer;}
     color: #FFF;
 }
 
+.burger a {color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.burger a:hover{
+    font-weight: 600;
+}
+
 a{
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;}
+    
+    a:hover{
+        font-weight: 500;}
+    
 
 .bodydesc {
     padding-bottom: 6px;
@@ -288,18 +303,18 @@ a{
     cursor: pointer;
     color: #FFF;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 600;
     margin-top: 6px;
     margin-bottom: 6px;
 }
 
 .seemore p:hover{
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .arrow {
     display: inline-block;
-    animation: bounce .8s infinite alternate ease-in-out;
+    animation: bounce .6s infinite alternate ease-in-out;
   }
   /* Bouncing animation */
   @keyframes bounce {
@@ -307,7 +322,7 @@ a{
       transform: translateX(0);
     }
     to {
-      transform: translateX(5px);
+      transform: translateX(4px);
     }
   }
 
@@ -613,5 +628,18 @@ display: none;
         letter-spacing: 0px;
 
     }
+
+    .gallery img:hover {
+        transform: scale(1.00);
+      }
+
+      .gallery img{
+        height: 180px; 
+      }
+ 
+      .gallery {
+        height: 180px;
+      }
+
 
 }
