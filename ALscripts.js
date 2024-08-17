@@ -1,5 +1,11 @@
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all images that are not inside an element with the class 'redimg'
+  const images = document.querySelectorAll('img:not(.redimg img)');
+  images.forEach(img => {
+    img.setAttribute('loading', 'lazy');
+  });
+});
 
     window.onscroll = function() {scrollericon()};
     
