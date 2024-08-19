@@ -54,6 +54,18 @@ function toggleButton(element) {
     filterCards();
 }
 
+// Function to activate all buttons including X
+function activateAll(element) {
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+  toggleButtons.forEach(button => {
+      // Ensure the button is activated (add 'active' class if not present)
+      if (!button.classList.contains('active')) {
+          button.classList.add('active');
+      }
+  });
+  filterCards();
+}
+
 function filterCards() {
     // Get all active buttons
     const activeButtons = document.querySelectorAll('.toggle-button.active');

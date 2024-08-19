@@ -229,10 +229,9 @@ cursor: pointer;}
 .color-sound { background-color: #ff6315; }
 .color-learning {background-color: #C500C5;}
 .color-digital {background-color: rgb(255, 0, 0);}
-
+.color-x {    background-color:#2e2e2e;}
 
 .toggle-button.active {
-  
     background-color:#2e2e2e;
     color: white; 
 
