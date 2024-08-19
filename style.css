@@ -29,6 +29,18 @@ body {
     border-radius: 0px;
     cursor: pointer;
   }
+
+
+  .mobile-top {
+    position: absolute;
+    width: 100%; /* Ensures full viewport width */
+    height: 340px;
+    max-width: 100vw; /* Prevents overflow beyond viewport width */
+    overflow: hidden; /* This will crop the contents outside of the set dimensions */
+    z-index: 1;
+    display: none;
+  }
+  
   
   .square {
     height: 100%;
@@ -609,12 +621,13 @@ display: none;
     display: none;
     }
 
-#red-image-2 {
-    left: 25%;
-    top: -10px;
-    width: 220px;
-    display: flex;
-}
+    #red-image-2 {
+        left: 25%;
+        top: -10px;
+        width: 220px;
+        display: flex;
+    }
+
 
 
 
@@ -640,6 +653,26 @@ display: none;
       .gallery {
         height: 180px;
       }
+
+
+      /* .square-wrapper{
+        display: none;
+      }
+
+      .mobile-top{
+        display: block;
+      }
+
+      .abstract{
+        background-color: #00000053;
+        width: 100vw;
+      }
+      #red-image-2 {
+        left: -20%;
+        top: -40px;
+        width: 500px;
+        display: flex;
+    } */
 
 
 }
